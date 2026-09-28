@@ -6,7 +6,7 @@
     <title>Prince Kumar — ML & Data Science Engineer</title>
     <meta
       name="description"
-      content="Prince Kumar — Computer Science undergraduate skilled in Python, Machine Learning, and Data Analysis. Portfolio showcasing projects in recommendation systems, computer vision, and data analytics."
+      content="Prince Kumar — Computer Science graduate skilled in Python, Machine Learning, and Data Analysis. Portfolio showcasing projects in recommendation systems, computer vision, and data analytics."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -544,13 +544,22 @@
         font-size: 5rem;
         font-weight: 800;
         color: var(--accent);
+        position: relative;
+      }
+
+      .hero-photo-fallback {
+        position: relative;
+        z-index: 1;
       }
 
       .hero-photo img {
+        position: absolute;
+        inset: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 50%;
+        z-index: 2;
       }
 
       .hero-stat {
@@ -1853,7 +1862,7 @@
       <div class="hero-inner container">
         <div class="hero-content">
           <div class="hero-badge">
-            <span></span> Available for Internships &amp; Projects
+            <span></span> Available for Full-time Opportunities
           </div>
           <h1 class="hero-name">
             Prince<br />
@@ -1864,7 +1873,7 @@
             ><span class="typing-cursor"></span>
           </div>
           <p class="hero-desc">
-            Computer Science undergraduate at DIATM, specializing in
+            Computer Science graduate from DIATM, specializing in
             <strong>Python, Machine Learning &amp; Data Analysis</strong>.
             Building scalable, data-driven solutions — from recommendation
             engines to computer vision systems.
@@ -1973,7 +1982,14 @@
         </div>
         <div class="hero-photo-wrap">
           <div class="hero-photo-ring">
-            <div class="hero-photo">PK</div>
+            <div class="hero-photo">
+              <span class="hero-photo-fallback">PK</span>
+              <img
+                src="images/profile.jpg"
+                alt="Prince Kumar"
+                onerror="this.style.display='none'"
+              />
+            </div>
           </div>
           <div class="hero-stat stat-projects reveal">
             <div class="hero-stat-val">3+</div>
@@ -2021,7 +2037,7 @@
           <div class="about-text reveal">
             <p>
               I'm <strong>Prince Kumar</strong>, a B.Tech Computer Science
-              undergraduate at
+              graduate from
               <strong
                 >Durgapur Institute Of Advanced Technology and Management
                 (2022–2026)</strong
@@ -2411,7 +2427,7 @@
             <div class="edu-school">
               Durgapur Institute Of Advanced Technology and Management (DIATM)
             </div>
-            <span class="edu-score">🎓 Pursuing</span>
+            <span class="edu-score">🎓 Graduated</span>
           </div>
           <div class="edu-card reveal reveal-delay-1">
             <div class="edu-year">2022</div>
@@ -2719,7 +2735,7 @@
         "Data Analyst",
         "Python Developer",
         "Problem Solver",
-        "B.Tech CSE Student",
+        "B.Tech CSE Graduate",
       ];
       let pi = 0,
         ci = 0,
